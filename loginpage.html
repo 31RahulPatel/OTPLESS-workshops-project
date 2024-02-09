@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://otpless.com/favicon.ico" />
+    <title>OTPless Login Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- code by: Rahul patel (2203031300025) gudience:gdscpu -->
+    <div class="container">
+        <p id="black"></p>
+        <p class="get">Click the Cookie to get secured with <b>OTPless</b> Loign</p>
+        <img id="cookie" src="cookie.png" alt="" class="responsive" onmouseover="changeImage(1,this)"
+            onmouseout="changeImage(2,this)">
+        <p class="get"><b>Login in now!</b></p>
+        <p id="go"></p>
+
+
+    </div>
+
+
+    <div class="container2">
+        <p id="black2"></p>
+        <p class="get2"> <b> DID YOU KNOW? </b></p>
+        <img id="cookie" src="securelogin.png" alt="" class="responsive" onmouseover="changeImages(1,this)"
+            onmouseout="changeImages(2,this)">
+
+        <p class="get2" id="change"><b>OTPless login enhances security measures.</b></p>
+        <p class="go2" id="more"><u>More ^</u></p>
+    </div>
+    <div id="otpless-login-page"></div>
+    <script type="text/javascript" src="https://otpless.com/auth.js" cid="5PD2EPT4HO4ZCNPJU5R8XY1PHG5ZGB9E"></script>
+    <!-- Adding a div with ids to get login page of otpless -->
+
+    <!-- Implement the following script to retrieve and log the user's information. -->
+    <script>
+        function changeImage(x, image) {
+            if (x == 1) {
+                image.src = 'securecookie.png';
+            }
+            if (x == 2) {
+                image.src = 'cookie.png';
+            }
+
+
+
+
+        }
+        function changeImages(x, image) {
+            if (x == 1) {
+                image.src = 'securelogin2.png';
+            }
+            if (x == 2) {
+                image.src = 'securelogin.png';
+            }
+
+
+
+
+        }
+        const cookie = document.getElementById("cookie");
+        const go = document.getElementById("go");
+        cookie.onclick = function () {
+            go.textContent = "You are good to go 😊"
+
+        }
+        const change = document.getElementById("change");
+        const more = document.getElementById("more");
+        more.onclick = function () {
+            change.textContent = "OTPless login simplifies authentication processes."
+
+        }
+    </script>
+    <script type="text/javascript">
+
+        function otpless(otplessUser) {
+            console.log(JSON.stringify(otplessUser));
+
+            //  OPTIONAL STEPS
+            // Store data according to you to validate the user at backend with our CURl or package
+            localStorage.setItem('otplessUserData', JSON.stringify(otplessUser));
+
+            // Redirect to another page (replace 'otherpage.html' with the actual filename)
+            window.location.href = 'otherpage.html';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+
+    /*  code by: Rahul patel (2203031300025) gudience:gdscpu  */
+
+body {
+    font-family: 'Poppins', sans-serif;
+  
+    
+}
+
+.container {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    height: 270px;
+    width: 240px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container:hover {
+
+
+    background-color: rgb(194, 172, 127);
+
+}
+
+#black {
+    height: 15px;
+    width: auto;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0;
+}
+
+.get {
+    color: black;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#cookie {
+    position: relative;
+    left: 70px;
+    top: 10px;
+    height: 85px;
+    width: 85px;
+    cursor: pointer;
+
+
+}
+
+.resposive {
+    width: 100%;
+
+}
+
+#go {
+    text-align: center;
+    position: relative;
+    top: -11px;
+
+}
+
+/* second container */
+
+.container2 {
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+    height: 270px;
+    width: 240px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.container2:hover {
+
+color: #fff;
+    background-color: rgb(52, 88, 88);
+    
+
+
+}
+
+
+
+#black2 {
+    height: 15px;
+    width: auto;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0;
+}
+
+.get2 {
+  
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+.go2 {
+    text-align: center;
+    position: relative;
+    top: -11px;
+    cursor: pointer;
+
+}
